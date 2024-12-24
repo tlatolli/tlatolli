@@ -1,0 +1,429 @@
+/* THIS CSS FILE APPLIES TO CLONG/... FILES /*
+
+/*****************
+	  Fonts 
+*****************/
+
+@font-face {
+	font-family: 'Sakkal Majalla';
+	src: url('../fonts/Sakkal-Majalla.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro Regular';
+	src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+/*****************
+	Body 
+*****************/
+
+html, body {
+	font-family: 'Source Sans Pro Regular', sans-serif, serif;
+}
+
+.main-panel {
+	padding: 0px;
+}
+
+.inactive-link {
+	cursor: not-allowed !important;
+	color: #CCC !important;
+	pointer-events: none;
+}
+
+/*****************
+	Sidebar
+*****************/
+
+.sidebar-panel {
+	min-width: 275px;
+	max-width: 275px;
+	background-color: #160F30;
+	color: #FFF;
+	overflow: hidden !important;
+	text-align: center;
+}
+
+.sidebar-panel a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.sidebar-panel a:hover {
+	color: #DDD;
+}
+
+.sidebar-panel-header {
+	width: 100%;
+	height: auto;
+	border-bottom: solid 2.5px #B89662;
+}
+
+.sidebar-panel-header h1 {
+	font-family: 'Sakkal Majalla';
+	font-size: 4rem;
+	line-height: 0.75em;
+	color: white;
+}
+
+.sidebar-panel-content {
+	padding-top: 3.85rem;
+}
+
+.sidebar-panel-content ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar-panel-content li {
+	padding: 0.915rem;
+}
+
+.sidebar-panel-content li:hover {
+	background-color: #372C5B;
+}
+
+.sidebar-panel-content hr {
+	border: 1px solid white;
+}
+
+.sidebar-panel-footer {
+	padding-top: 3.85rem;
+}
+
+/*****************
+	Content
+*****************/
+
+.content-panel {
+	flex: 1;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.content-panel p {
+	font-size: 1.025rem;
+}
+
+.content-panel-header-wrapper {
+	background-color: #372C5B;
+	color: white;
+	height: 200px;
+	display: flex;
+	align-items: center;
+}
+
+.content-panel-header {
+	padding-left: 2.75rem;
+	padding-right: 2.75rem;
+}
+
+.content-panel-header h1 {
+	font-size: 3rem;
+}
+
+.content-panel-body-wrapper {
+	padding: 2rem 3rem 2rem 3rem;
+}
+
+.content-panel-image-wrapper {
+	text-align: center;
+}
+
+.content-panel-image-side {
+	min-width: 330px;
+	max-width: 350px;
+}
+
+.content-panel-image-caption {
+	text-align: center;
+	font-style: italic;
+	padding-top: 10px;
+}
+
+/*****************
+	Navbar
+*****************/
+
+.navbar-panel {
+	background-color: #221933 !important;
+	border-bottom: solid 2.5px #B89662;
+}
+
+#nav-header {
+	background-color: #221933;
+	text-align: center;
+	float: left;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#nav-header a {
+	color: #FFF;
+}
+
+.navbar-brand {
+	text-align: center;
+	font-family: 'Sakkal Majalla';
+	padding-left: 1rem;
+}
+
+.navbar-brand h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0px;
+}
+
+.navbar-panel-toggler {
+	margin-right: 1rem;
+	margin-top: 1.5rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.navbar-nav {
+	padding: 0px 1rem;
+}
+
+.nav-item {
+	font-size: 1.08rem;
+	padding: 0.55rem 0rem;
+}
+
+.navbar-panel hr {
+	border: 1px solid white;
+}
+
+/*****************
+	Index Page
+*****************/
+
+/* This styling applies solely to the index page of the clong folder. */
+
+#misc-mp-accordion .misc-mp-panel {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+#misc-mp-accordion .misc-mp-panel:before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	border: 1px dashed #6E8898;
+	position: absolute;
+	top: 25px;
+	left: 18px;
+}
+
+#misc-mp-accordion .misc-mp-panel:last-child:before {
+	display: none;
+}
+
+#misc-mp-accordion .misc-mp-panel-heading {
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	position: relative;
+}
+
+#misc-mp-accordion .misc-mp-panel-title a {
+	display: block;
+	padding: 10px 30px 10px 60px;
+	margin: 0;
+	background: #FFF;
+	font-size: 1.275rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: #000;
+	border-radius: 0;
+	position: relative;
+}
+
+#misc-mp-accordion .misc-mp-panel-title a:before,
+#misc-mp-accordion .misc-mp-panel-title a.collapsed:before {
+	content: "+";
+	font-weight: 900;
+	width: 40px;
+	height: 100%;
+	line-height: 40px;
+	background: #513D7A;
+	border: 1px solid #513D7A;
+	border-radius: 3px;
+	font-size: 17px;
+	color: #FFF;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s ease 0s;
+}
+
+#misc-mp-accordion .misc-mp-panel-title a.collapsed:before {
+	content: "-";
+	background: #FFF;
+	border: 1px solid #6E8898;
+	color: #000;
+}
+
+#misc-mp-accordion .misc-mp-panel-body {
+	padding: 10px 30px 10px 30px;
+	margin-left: 40px;
+	background: #FFF;
+	border-top: none;
+	font-size: 1rem;
+}
+
+/*****************
+	Styling
+*****************/
+
+/* Each language page overrides the base colors with their respective theme. */
+
+/* Tokhar Theme */
+
+.tokhar-theme-sidebar {
+	background-color: #3D0000 !important;
+}
+
+.tokhar-theme-sidebar-li li:hover {
+	background-color: # !important;
+}
+
+.tokhar-sidebar-panel-content li:hover {
+	background-color: #B51B1B;
+}
+
+.tokhar-theme-navbar {
+	background-color: #3D0000 !important;
+}
+
+.tokhar-theme-header {
+	background-color: #7E0100 !important;
+}
+
+.tokhar-theme-pages {
+	background-color: #B51B1B !important;
+}
+
+.tokhar-theme-content h1, 
+.tokhar-theme-content h2, 
+.tokhar-theme-content h3,
+.tokhar-theme-content h4,
+.tokhar-theme-content h5 {
+	color: # !important;
+}
+
+.tokhar-theme-btn {
+	background-color: # !important;
+	border-color: # !important;
+}
+
+.tokhar-theme-btn:hover {
+	background-color: # !important;
+	border-color: # !important;
+}
+
+/* Bretonese Theme */
+
+.bretonese-theme-sidebar {
+	background-color: #002823 !important;
+}
+
+.bretonese-theme-sidebar-li li:hover {
+	background-color: #324266 !important;
+}
+
+.bretonese-sidebar-panel-content li:hover {
+	background-color: #006B5E;
+}
+
+.bretonese-theme-navbar {
+	background-color: #002823 !important;
+}
+
+.bretonese-theme-header {
+	background-color: #004C44 !important;
+}
+
+.bretonese-theme-pages {
+	background-color: #006B5E !important;
+}
+
+.bretonese-theme-content h1, 
+.bretonese-theme-content h2, 
+.bretonese-theme-content h3,
+.bretonese-theme-content h4,
+.bretonese-theme-content h5 {
+	color: #004C44 !important;
+}
+
+.bretonese-theme-btn {
+	background-color: #4B6399 !important;
+	border-color: #4B6399 !important;
+}
+
+.bretonese-theme-btn:hover {
+	background-color: #004C44 !important;
+	border-color: #004C44 !important;
+}
+
+/* Miyanoguchi Theme */
+
+.miyanoguchi-theme-sidebar {
+	background-color: #192133 !important;
+}
+
+.miyanoguchi-theme-sidebar-li li:hover {
+	background-color: #324266 !important;
+}
+
+.miyanoguchi-sidebar-panel-content li:hover {
+	background-color: #4B6399;
+}
+
+.miyanoguchi-theme-navbar {
+	background-color: #192133 !important;
+}
+
+.miyanoguchi-theme-header {
+	background-color: #324266 !important;
+}
+
+.miyanoguchi-theme-pages {
+	background-color: #4B6399 !important;
+}
+
+.miyanoguchi-theme-content h1, 
+.miyanoguchi-theme-content h2, 
+.miyanoguchi-theme-content h3,
+.miyanoguchi-theme-content h4,
+.miyanoguchi-theme-content h5 {
+	color: #324266 !important;
+}
+
+.miyanoguchi-theme-btn {
+	background-color: #4B6399 !important;
+	border-color: #4B6399 !important;
+}
+
+.miyanoguchi-theme-btn:hover {
+	background-color: #324266 !important;
+	border-color: #324266 !important;
+}
+
+/*****************
+	Responsive 
+*****************/
+
+@media (max-width:576px) {
+	.content-panel-header h1 {
+		font-size: 2.55rem;
+	}
+}

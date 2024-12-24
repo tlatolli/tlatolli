@@ -1,0 +1,432 @@
+/* THIS CSS FILE APPLIES TO ../DICT/.. FILES*
+
+/*****************
+	  Fonts 
+*****************/
+
+@font-face {
+	font-family: 'EB Garamond';
+	src: url('../fonts/EBGaramond-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Brill Regular';
+	src: url('../fonts/Brill-Roman.ttf');
+}
+
+@font-face {
+	font-family: 'Brill Bold';
+	src: url('../fonts/Brill-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Amiri Regular';
+	src: url('../fonts/Amiri-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro Regular';
+	src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro Light';
+	src: url('../fonts/SourceSansPro-Light.ttf');
+}
+
+/*****************
+	  General 
+*****************/
+
+/* General styling for the entire dictionary page. */
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100% !important;
+	font-family: 'Source Sans Pro Regular';
+}
+
+.site-wrapper {
+	overflow: auto;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+
+.index-return {
+	padding-left: 20px;
+	font-style: italic;
+}
+
+/*****************
+	  Header 
+*****************/
+
+/* Styling for the topmost heading banner. */
+
+h1 {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	font-size: 28px;
+}
+
+.header-panel {
+	background-color: #7E0100;
+	color: white;
+}
+
+.header-panel-heading {
+	padding: 10px;
+}
+
+.header-panel-alphabet-table {
+	font-family: 'Brill Regular';
+	table-layout: fixed;
+	text-align: center;
+	padding: 0px 10px 10px 10px;
+	width: 100%;
+}
+
+/*****************
+	  iFrames 
+*****************/
+
+/* Styling for the iFrame boxes themselves. */
+
+.main-panel {
+	overflow: auto;
+	flex-grow: 1;
+}
+
+.sidebar-panel {
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+.content-panel {
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+.sidebar-panel iframe {
+	border: 0px;
+	border-right: 1px solid black !important;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.content-panel iframe {
+	border: 0px;
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+
+/*****************
+	  Content
+*****************/
+
+/* Styling for the default welcome message. */
+
+.welcome-h2 {
+	font-size: 32px;
+	font-family: 'EB Garamond';
+	font-style: normal !important;
+}
+
+.welcome-p {
+	width: 75%;
+	font-size: 24px;
+	font-family: 'EB Garamond';
+	text-align: justify;
+}
+
+/*****************
+	Sidebar
+*****************/
+
+/* Styling for the word-selection sidebar panel. */
+
+.sidebar-wrapper {
+	padding: 10px;
+}
+
+.sidebar-heading {
+	text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+.sidebar-heading h1 {
+	display: inline;
+	font-weight: bold;
+	font-size: 38px;
+	color: #7E0100;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar-heading h2 {
+	display: inline;
+	font-size: 14px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar-list {
+	padding: 15px 35px 15px 35px;
+}
+
+.sidebar-list a {
+	color: #7E0100;
+	text-decoration: none;
+	font-size: 32px;
+	font-style: normal;
+	font-family: 'Brill Regular';
+	padding-right: 10px;
+}
+
+.sidebar-list-ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar-list-ul li {
+	padding-bottom: 5px;
+	font-size: 22px;
+}
+
+.sidebar-romanization {
+	font-style: italic;
+}
+
+/*****************
+	Entries
+*****************/
+
+/* Styling for word entries. */
+
+.content-wrapper {
+	overflow-x: hidden;
+	padding: 25px;
+	margin: 0px;
+}
+
+.content-header {
+	padding-bottom: 25px;
+}
+
+.content-header-entry-word {
+	display: flex;
+}
+
+.content-header-entry-word h1 {
+	display: inline;
+	font-size: 52px;
+	font-family: 'Brill Bold';
+	color: #7E0100;
+	padding: 0px;
+	margin: 0px;
+}
+
+.content-header-entry-word h2 {
+	display: inline;
+	padding-left: 24px;
+	font-style: italic;
+	font-size: 28px;
+}
+
+.header-entry-word-arabic {
+	font-family: 'Amiri Regular';
+}
+
+.content-header-ipa p {
+	display: inline;
+	margin: 0px;
+	font-size: 28px;
+	padding-right: 15px;
+}
+
+.content-body {
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+}
+
+.content-body h2 {
+	margin: 0px;
+	padding-bottom: 15px;
+}
+
+.content-body-tabs p {
+	text-align: justify;
+}
+
+.noun {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #9ED6FF;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+.proper-noun {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #9EA4FF;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+.adjective {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #FFD09E;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+.verb {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #9EFFA7;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+.masculine {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #9ED6FF;
+	border-radius: 5px;
+}
+
+.feminine {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #FFB2D3;
+	border-radius: 5px;
+}
+
+.neuter {
+	padding: 5px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #ccc;
+	border-radius: 5px;
+}
+
+.tab {
+	overflow: hidden;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	border: 1px solid #ccc;
+	width: 33%;
+}
+
+.tab button:hover {
+	background-color: #B57070;
+	color: white;
+}
+
+.tab button.active {
+	background-color: #7E0100;
+	color: white;
+}
+
+.tabcontent {
+	display: none;
+	padding: 25px;
+	border-top: none;
+}
+
+.term {
+	font-style: italic;
+	font-weight: bold;
+	color: #7E0100;
+}
+
+.term-nob {
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+
+.term-noi {
+	font-weight: bold;
+	color: #7E0100;
+}
+
+legend {
+	font-size: 20px;
+	text-align: left;
+}
+
+.gloss {
+	text-decoration: underline dotted;
+	font-variant: small-caps;
+	cursor: help;
+}
+
+.inflection-table {
+
+}
+
+.inflection-table button {
+	font-family: 'EB Garamond';
+	font-size: 1em;
+	font-weight: bold;
+
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*****************
+	Scroll Bar 
+*****************/
+
+/* Styling for the custom scroll bar. */
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #B57070; 
+}
+ 
+::-webkit-scrollbar-thumb {
+	background: #7E0100; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #B51B1B; 
+}

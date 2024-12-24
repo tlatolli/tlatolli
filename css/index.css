@@ -1,0 +1,87 @@
+/* THIS CSS FILE ONLY APPLIES TO ROOT INDEX FILE */
+
+/*****************
+	  Fonts 
+*****************/
+
+@font-face {
+	font-family: 'Sakkal Majalla';
+	src: url('../fonts/Sakkal-Majalla.ttf');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro Light';
+	src: url("../fonts/SourceSansPro-Light");
+}
+
+@font-face {
+	font-family: 'Source Sans Pro Regular';
+	src: url("../fonts/SourceSansPro-Regular");
+}
+
+/*****************
+	  Basic 
+*****************/
+
+body {
+	font-family: 'Source Sans Pro Light';
+	background-color: #160F30;
+	color: white;
+}
+
+.main-container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.header-container {
+	text-align: center;
+	padding-top: 15px;
+	border-bottom: solid 2.5px #B89662;
+}
+
+#title {
+	font-family: 'Sakkal Majalla';
+	font-size: 4.75em;
+	line-height: 0.75em;
+	color: white;
+}
+
+.body-jumbotron {
+	background-color: #372C5B;
+}
+
+.custom-btn-lg {
+	background-color: transparent;
+	border: solid 1px white;
+	font-size: 1.25em;
+	color: white;
+}
+
+.custom-btn-lg:hover {
+	background-color: white;
+	color: #0F0B16;
+}
+
+.custom-btn-sm {
+	background-color: transparent;
+	border: solid 1px white;
+	font-size: 1em;
+	color: white;
+}
+
+.custom-btn-sm:hover {
+	background-color: white;
+	color: #0F0B16;
+}
+
+.notice {
+	text-align: center;
+	font-size: 1.15em;
+	padding-bottom: 10px;
+}
+
+footer {
+	text-align: center;
+	border-top: solid 2.5px #B89662;
+}
